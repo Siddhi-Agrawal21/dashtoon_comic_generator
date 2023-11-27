@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Strip Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+    <div id="loadingOverlay" style="display: none;">
+        <div class="loadingSpinner">
+            <p>Loading...</p>
+            <i class="fas fa-spinner fa-spin"></i>
+        </div>
+    </div>
+    <h1>Comic Strip Generator</h1>
+    
+    <div id="comicForm">
+        <form id="textForm">
+            <label for="text1">Panel 1:</label>
+            <input type="text" id="text1" name="texts[]" required><br>
+            <!-- <label for="panel1">Panel 1:</label>
+            <textarea id="panel1" name="panel1" rows="4" cols="50" required></textarea><br>
+            <textarea id="panel1_bubble" name="panel1_bubble" rows="2" cols="30" placeholder="Speech Bubble"></textarea><br> -->
+
+            <label for="text2">Panel 2:</label>
+            <input type="text" id="text2" name="texts[]" required><br>
+
+            <label for="text3">Panel 3:</label>
+            <input type="text" id="text3" name="texts[]" required><br>
+
+            <label for="text4">Panel 4:</label>
+            <input type="text" id="text4" name="texts[]" required><br>
+
+            <label for="text5">Panel 5:</label>
+            <input type="text" id="text5" name="texts[]" required><br>
+
+            <label for="text6">Panel 6:</label>
+            <input type="text" id="text6" name="texts[]" required><br>
+
+            <label for="text7">Panel 7:</label>
+            <input type="text" id="text7" name="texts[]" required><br>
+
+            <label for="text8">Panel 8:</label>
+            <input type="text" id="text8" name="texts[]" required><br>
+
+            <label for="text9">Panel 9:</label>
+            <input type="text" id="text9" name="texts[]" required><br>
+
+            <label for="text10">Panel 10:</label>
+            <input type="text" id="text10" name="texts[]" required><br>
+    <button type="submit">Generate Comic</button>
+        </form>
+    </div>
+
+    <div id="comicPanels"></div>
+    <script src="script.js"></script>
+</body>
+</html>
